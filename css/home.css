@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'androgyneregular';
+    src: url('../font/androgyne_tb-webfont.eot');
+    src: url('../font/androgyne_tb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/androgyne_tb-webfont.woff2') format('woff2'),
+         url('../font/androgyne_tb-webfont.woff') format('woff'),
+         url('../font/androgyne_tb-webfont.ttf') format('truetype'),
+         url('../font/androgyne_tb-webfont.svg#androgyneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.gcodeicon{ position:absolute; top:-10px; right:600px; width:236px; height:196px;}
+.text4{  font-family: 'androgyneregular'; font-size:50px; color:#ffffff; margin-top:-10px;}
+.text4 span{ color:#fb6600;}
+
+@media screen and (max-width:1400px) {
+
+#home-slider-wrap .item .item-text-wrap { top:45%;}
+}
+
+@media screen and (max-width:1400px) {
+
+#home-slider-wrap .item .item-text-wrap { top:40%;}
+}
+
+@media screen and (max-width:1100px) {
+
+#home-slider-wrap .item .item-text-wrap { top:35%;}
+
+.home-page-content .bx-wrapper .bx-prev {
+	margin-top:-120px!important;}
+	
+	.home-page-content .bx-wrapper .bx-next {	margin-top:-120px!important;}
+	.text4{ font-size:36px; margin-top:-30px;}
+}
+
+
+@media screen and (max-width:900px) {
+#header{ background:#000;}
+#home-slider-wrap .item .item-text-wrap { top:30%;}
+#home-slider-wrap .item .item-text-wrap h1 a .text{ font-size:12px!important; padding:0 5px;}
+.home-page-content .bx-wrapper .bx-prev { display:none;}
+.home-page-content .bx-wrapper .bx-next  { display:none;}
+
+#home-slider-wrap .item{ margin-top:99px;}
+}
+
+
+@media screen and (max-width:768px) {
+#home-slider-wrap .item .item-text-wrap { top:30%;}
+#home-slider-wrap .item .item-text-wrap h1.text {
+    font: 12px/50px Arial,Helvetica,sans-serif!important;
+    margin: 10px 0 20px;
+    padding-left: 20px;
+}
+
+}
+
+@media screen and (max-width:720px) {
+#home-slider-wrap .item .item-text-wrap h1.text{ display:none;}
+
+	.text4{ font-size:30px; margin-top:-50px; margin-bottom:15px;}
+
+}
+
+@media screen and (max-width:580px) {
+#home-slider-wrap .item .item-text-wrap { top:20%;}
+
+	.text4{ font-size:24px; margin-top:-50px; margin-bottom:15px;}
+}
+
+@media screen and (max-width:400px) {
+#home-slider-wrap .item .item-text-wrap { top:15%;}
+
+	.text4{ font-size:18px; margin-top:-50px; margin-bottom:15px;}
+	.bd-button{ display:none;}
+}

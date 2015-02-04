@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ablazeiq</title>
+
+<!--[if IE 7]>
+    <link rel="stylesheet" href="/wp-content/themes/bd/css/ie7/ie7.css" type="text/css" media="all">
+    <![endif]-->
+
+
+    <link href="images/fav.gif" rel="icon" sizes="32*32" />
+<link rel='stylesheet' id='contact-form-7-css'  href='css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jf-style-css'  href='css/style2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jf-global-css'  href='css/style3.css' type='text/css' media='all' />
+<link rel='stylesheet'   href='css/innercss.css' type='text/css' media='all' />
+
+
+
+<!--<script type='text/javascript' src='js/jquery.js'></script>
+-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+
+
+
+ <script type="text/javascript">
+
+
+     function getParameterByName(name) {
+         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                 results = regex.exec(location.search);
+         return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+     }
+
+$(document).ready(function(){
+
+$('.imgdiv').hover(function(){
+	$(this).children('img:last').show();
+	$(this).children('img:first').hide();
+},function(){
+	$(this).children('img:first').show();
+	$(this).children('img:last').hide();
+});
+
+
+ $( "a[href='#']" ).each(function( index ) {
+
+      
+
+if($(this).attr('data-toggle')!= 'tab')
+
+  $(this).attr('href','javascript:void(0);');
+
+});
+});
+
+$.validator.setDefaults({
+    submitHandler: function() {
+        alert("submitted!");
+    }
+});
+
+$().ready(function() {
+
+
+    var senddata = getParameterByName('l');
+
+    if(senddata==1)
+    {
+        document.getElementById('submitform1').style.display='block';document.getElementById('fade').style.display='block';
+
+    }
+
+
+
+
+    $("#form1").validate({
+        rules: {
+            name: "required",
+            comp: "required",
+            help: "required",
+
+            mail: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true,
+                number: true
+            }
+
+        },
+        messages: {
+            name: "Please enter your name",
+            comp: "Please enter your company name",
+            help: "Please enter your message",
+
+            mail: {
+                required: "Please provide an email",
+                email: "This is not a valid email"
+            },
+            phone: {
+                required: "Please provide an phone number",
+                phone: "This is not a valid phone number"
+            }
+
+        }
+    });
+
+});
+
+</script>
+
+
+
+
+<style type="text/css">
+body{ background:#ffffff;}
+.recentcomments a {
+	display:inline !important;
+	padding:0 !important;
+	margin:0 !important;
+}
+</style>
+
+
+</head>
+<body class="home blog" data-controller="home">
+<a href="#" rel="publisher"></a>
+<div id="page" class="site ">
+  <header id="header" class="">
+    <div class="row header"> <a id="logo" href="index.html" rel="home"><img src="images/newlogo.gif" alt="#"></a>
+      <nav id="nav" class="main-navigation" role="navigation">
+        <ul id="menu-main" class="menu">
+   <li><a href="blazingfacts.html"><span>b</span>lazing facts</a></li>
+          <li><a href="javascript:void(0)"><span>f</span>acilities   </a>
+          <ul>
+          <li><a href="webfly.html"><span>w</span>ebfly </a></li>
+          <li><a href="toonage.html"><span>t</span>oonage</a></li>
+           <li><a href="approach.html"><span>a</span>pproach </a></li>
+              <li><a href="emotion.html"><span>e</span>motion  </a></li>
+          
+          
+          </ul>
+          
+          
+          </li>
+          <li><a href="showblaze.html"><span>s</span>howblaze</a></li>
+          <li><a href="ablazers.html"><span>a</span>blazers</a></li>
+          <li><a href="takeablaze.html"><span>t</span>ake a blaze</a></li>
+       
+        </ul>
+        <span id="m-nav-close" class="fa">&times;</span> </nav>
+      <!-- #nav -->
+      
+      <style type="text/css">
+#nav{margin-right:100px}
+</style>
+      <a id="m-nav" href="#">Menu <span class="fa"><img src="images/menu.png" alt="#"></span></a>
+      <div class="clear"></div>
+    </div>
+     <div class="gcodeicon"><a href="getaquote.html"><img src="images/gcodeicon.png" alt="#"></a></div>
+  </header>
+  <!-- #header -->
+  
+  
+ 
+  
+
+  <div id="service" class="about">
+      <div class="service-item parallax" style="background-image:url('images/gcodebanner.png'); ">
+        <div class="service-item-text" style="height:923px;">
+       
+            
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      
+      <div class="about-body">
+            
+            <div class="app-wrapper">
+            
+              <h1><span>Let’s discuss how we’ll keep your business</span> ahead of the
+curve…</h1>
+
+
+       
+       
+      
+       <p style="text-align:center; border-bottom:solid 1px #ddd; padding:35px 0 25px 0; font-size:18px;">Call us, and we’ll show you how simple, easy and downright delightful it is to work together. </p>
+       
+       
+       <div class="getaquote-form-wrapper">
+
+
+           <form action="mail1.php" method="post" id="form1">
+
+
+       <label>Name</label>
+       
+       <input type="text" class="ginput1" name="name" id="name">
+       
+     <!-- <span class="error1">error</span>-->
+       
+       
+        <label>Email</label>
+        
+         <input type="text" class="ginput1" name="mail" id="mail">
+        <!-- <span class="error1">error</span>-->
+         <label>Phone Number</label>
+          <input type="text" class="ginput1" name="phone" id="phone">
+         <!-- <span class="error1">error</span>-->
+         
+            <label>Company Name</label>
+             <input type="text" class="ginput1" name="comp" id="comp">
+             <!-- <span class="error1">error</span>-->
+            
+            
+              
+              
+              <label>How did you hear about us?</label>
+
+               <textarea class="ginput3" name="hear" id="hear"></textarea>
+            <!-- <span class="error1">error</span>-->
+              
+               <label>How can we help you?</label>
+               
+               
+               <textarea class="ginput3" name="help" id="help"></textarea>
+               
+              <!-- <span class="error1">error</span>-->
+              
+               <label>Expected Budget</label>
+              
+              <select class="ginput2" name="budget" id="budget">
+                  <option>Select Budget</option>
+              <option>0 to 1000USD</option>
+               <option>1000USD to 2000USD</option>
+                <option>2000USD to 5000USD</option>
+                <option>5000USD to More</option>
+
+              </select>
+            <!-- <span class="error1">error</span>-->
+                
+                
+                  <label>Target Project Deadline</label>
+                  
+                   <select class="ginput2" name="dead" id="dead">
+                       <option>Select Deadline</option>
+              <option>Less than a week</option>
+                 <option>Less than a month</option>
+                  <option>Approx 6 Month</option>
+                  <option>Continue year long</option>
+
+              </select>
+             <!-- <span class="error1">error</span>-->
+              
+              <input class="btn3" type="submit" value="Submit">
+       
+</form>
+
+
+
+       
+       </div>
+       
+       
+       
+            </div>
+            
+            
+            
+            
+            
+      </div>
+   
+  
+  
+
+
+        <div class="clear"></div>
+        
+        
+      
+  <!-- #content -->
+  <footer id="footer"> 
+    
+    <div class="footer-logo"><a href="index.html"><img src="images/logo.png" alt="#"></a></div>
+    <div class="footer-menu">
+        
+   <a href="blazingfacts.html">bazing facts</a>
+    |
+         <a href="webfly.html">facilities</a>
+         |
+             <a href="showblaze.html">showblaze </a>
+            |
+          <a href="ablazers.html">ablazers</a>
+            |
+          <a href="takeablaze.html">take a blaze</a>
+       
+      
+      <span>&copy;2014 KTA Group. All rights reserved</span>
+      
+      <div class="footer-socaldiv">
+      <a href="https://www.facebook.com/ablazeiq" target="_blank"><img src="images/i1.png" alt="#"></a>
+         <a href="https://twitter.com/ablazeiq" target="_blank"><img src="images/i2.png" alt="#"></a>
+          <a href="http://in.linkedin.com/pub/ablaze-iq/a3/480/a57/" target="_blank"><img src="images/i3.png" alt="#"></a>
+               <a href="https://www.youtube.com/watch?v=md2vKGgdBrA&feature=youtu.be" target="_blank"><img src="images/i4.png" alt="#"></a>
+
+          <a href="https://plus.google.com/u/2/106581649665775369838/about" target="_blank"><img src="images/i5.png" alt="#"></a>
+      </div>
+      
+    </div>
+    
+  </footer>
+  
+  <!-- #request_form -->
+</div>
+<!-- #page -->
+
+
+
+<script type='text/javascript' src='js/production.js'></script>
+
+
+<div id="submitform1" class="white_content"> <a href = "javascript:void(0)" onclick = "document.getElementById('submitform1').style.display='none';document.getElementById('fade').style.display='none'" class="close-block"><img src="images/closep.png"></a>
+    <div class="clear"></div>
+    <div class="popup-body" >
+        <img src="images/logo1.png" alt="logo" style="margin: 0 auto;display:block;margin-top: -20px;">
+        <p style=" font-family: 'caviar_dreamsregular'; font-size: 22px; line-height: 35px;">Thank you for contacting ablazeiq. Your message has been received and you will be contacted shortly by one of our experts.</p>
+
+    </div>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+</body>
+</html>
